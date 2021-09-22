@@ -1,0 +1,23 @@
+#Banner
+#spring.main.banner-mode: off
+
+
+##App
+server:
+  port: 8084
+spring:
+  application:
+    name: test
+
+#DB
+  datasource:
+    url: jdbc:oracle:thin:@//localhost:1521/test
+    username: test
+    password: test1234
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+  jpa:
+      database: oracle
+      show-sql: true
+      hibernate:
+        ddl-auto: none
+        use-new-id-generator-mappings: false
